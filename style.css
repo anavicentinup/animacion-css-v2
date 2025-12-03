@@ -12,12 +12,16 @@ body{
     min-height: 100vh;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 
 /*TRASFORMACIONES: PERMITEN MOD LA APARIENCIA DE UN ELEMENTO EN EL ESPACIO 2D O 3D
 SIN ALTERAR SU FLUJO EN EL DOCUMENTO
 rotate(grados) scale(escala se agranda) traslate (traslada en px)*/
-
+[class]:hover {
+    transform: rotate(90deg) scale(1.5);
+    background-color: blue;
+}
 
 .boxin{
     background-color: aqua;
@@ -27,10 +31,7 @@ rotate(grados) scale(escala se agranda) traslate (traslada en px)*/
     transition: all 3s ease-in;
 }
 
-[class]:hover {
-    transform: rotate(90deg) scale(1.5);
-    background-color: blue;
-}
+
 .boxlinear{
     background-color: aqua;
     width: 100px;
@@ -53,7 +54,7 @@ rotate(grados) scale(escala se agranda) traslate (traslada en px)*/
     transition: all 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-
+/*
 .balon1{
     background-color: rgb(242, 9, 56);
     width: 100px;
@@ -79,6 +80,45 @@ rotate(grados) scale(escala se agranda) traslate (traslada en px)*/
     transform: translateY(-300px);
     background-color: rgb(226, 201, 9);
 }
+*/
+
+.balon1{
+    background-color: rgb(37, 33, 149);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: rebotar 2s infinite alternate ease-in-out;
+}
+
+.balon2{
+    background-color: rgb(50, 5, 154);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: rebotar 2s infinite alternate ease-in-out;
+}
+@keyframes rebotar {
+    0% {
+        transform: scale(0);
+        background-color: rgb(19, 155, 223);
+
+    }
+    100%{
+        transform: scale(3);
+        background-color:red;
+        color: aliceblue;
+    }
+}
+ div{
+    display: flex;
+ }
+
+div h1{
+ position: absolute;
+top: 10px;
+left: 10px;
+}
+
 
 
 
