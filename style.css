@@ -3,3 +3,49 @@
     margin: o;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    /*le doy altura por que mi eje principal es horizontal y no tendria sentido usar alig item */   
+   /*min-height: minimo de alto para la pantalla*/
+    min-height: 100vh;
+    align-items: center;
+    background-color: black;
+}
+
+/*TRASFORMACIONES: PERMITEN MOD LA APARIENCIA DE UN ELEMENTO EN EL ESPACIO 2D O 3D
+SIN ALETERAR SU FLUJO EN EL DOCUMENTO
+rotate(grados) scale(escala se agranda) traslate (traslada en px)*/
+img{
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+}
+
+.avion img{
+    background-color: aquamarine;
+    transition: transform 3s;
+}
+
+.avion img:hover{
+ transform:  scale(1) rotate(180deg);
+}
+
+.nieve img{
+    background-color: aquamarine;
+    transition: transform 3s;
+}
+
+.nieve img:hover{
+ transform:  scale(1) rotate(180deg);
+}
+
+.micro img{
+    background-color: aquamarine;
+    transition: transform 3s;
+}
+
+.micro img:hover{
+ transform:  scale(1) rotate(180deg);
+}
