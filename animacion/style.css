@@ -21,7 +21,7 @@ body{
     width: 200px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(to right, #13c5e8, #072ebd);
+    background: linear-gradient(to right, #e4360f, #072ebd);
     animation: recargar  3s linear infinite alternate,
                 brillar 2s linear infinite alternate;
 }
@@ -39,7 +39,7 @@ body{
 
     }
     100%{
-        transform: rotateY(360deg) rotateZ(360deg);
+        transform: rotateY(360deg) rotateZ(360deg)scale(4);
     }
 }
 
